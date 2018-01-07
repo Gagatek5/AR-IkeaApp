@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ARVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ARVC" customModule="AR_IkeaApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oik-Ov-70P">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="719"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="719" id="ByL-kl-xaY"/>
+                                </constraints>
+                            </arscnView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ciR-km-yz4">
+                                <rect key="frame" x="0.0" y="719" width="375" height="93"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="30" id="5GY-Gt-w8y">
+                                    <size key="itemSize" width="120" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Items" id="vlO-uW-tTj" customClass="itemCell" customModule="AR_IkeaApp" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="21.666666666666668" width="120" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UYN-jg-Sgr">
+                                                    <rect key="frame" x="43" y="15" width="34" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="UYN-jg-Sgr" firstAttribute="centerY" secondItem="vlO-uW-tTj" secondAttribute="centerY" id="3QV-ke-UJ3"/>
+                                            <constraint firstItem="UYN-jg-Sgr" firstAttribute="centerX" secondItem="vlO-uW-tTj" secondAttribute="centerX" id="9tJ-Bg-kqf"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="itemLabel" destination="UYN-jg-Sgr" id="vXs-jY-HcO"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ciR-km-yz4" firstAttribute="top" secondItem="oik-Ov-70P" secondAttribute="bottom" id="A76-u1-933"/>
+                            <constraint firstItem="oik-Ov-70P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Boe-0v-qz0"/>
+                            <constraint firstAttribute="bottom" secondItem="ciR-km-yz4" secondAttribute="bottom" id="F2h-WX-I8F"/>
+                            <constraint firstItem="oik-Ov-70P" firstAttribute="leading" secondItem="ciR-km-yz4" secondAttribute="leading" id="Nzm-B2-m0X"/>
+                            <constraint firstItem="oik-Ov-70P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="QZA-vs-ecV"/>
+                            <constraint firstItem="oik-Ov-70P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="egc-E4-UNd"/>
+                            <constraint firstItem="oik-Ov-70P" firstAttribute="trailing" secondItem="ciR-km-yz4" secondAttribute="trailing" id="flQ-MY-eH1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="itemsCollectionView" destination="ciR-km-yz4" id="LHQ-Oy-NvS"/>
+                        <outlet property="scaneView" destination="oik-Ov-70P" id="1eW-Md-xGF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="117.48768472906404"/>
+        </scene>
+    </scenes>
+</document>
