@@ -75,7 +75,7 @@
                     </view>
                     <connections>
                         <outlet property="itemsCollectionView" destination="ciR-km-yz4" id="LHQ-Oy-NvS"/>
-                        <outlet property="scaneView" destination="oik-Ov-70P" id="1eW-Md-xGF"/>
+                        <outlet property="sceneView" destination="oik-Ov-70P" id="1eW-Md-xGF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

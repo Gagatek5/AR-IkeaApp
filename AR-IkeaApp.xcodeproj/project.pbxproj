@@ -13,6 +13,7 @@
 		E239E2572002DD1700BA5A15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E239E2562002DD1700BA5A15 /* Assets.xcassets */; };
 		E239E25A2002DD1700BA5A15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E239E2582002DD1700BA5A15 /* LaunchScreen.storyboard */; };
 		E239E2622002E20100BA5A15 /* itemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E239E2612002E20100BA5A15 /* itemCell.swift */; };
+		E239E2652002E4C400BA5A15 /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E239E2642002E4C400BA5A15 /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E239E2592002DD1700BA5A15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E239E25B2002DD1700BA5A15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E239E2612002E20100BA5A15 /* itemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = itemCell.swift; sourceTree = "<group>"; };
+		E239E2642002E4C400BA5A15 /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				E239E2582002DD1700BA5A15 /* LaunchScreen.storyboard */,
 				E239E25B2002DD1700BA5A15 /* Info.plist */,
 				E239E2612002E20100BA5A15 /* itemCell.swift */,
+				E239E2642002E4C400BA5A15 /* Models.scnassets */,
 			);
 			path = "AR-IkeaApp";
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E239E25A2002DD1700BA5A15 /* LaunchScreen.storyboard in Resources */,
+				E239E2652002E4C400BA5A15 /* Models.scnassets in Resources */,
 				E239E2572002DD1700BA5A15 /* Assets.xcassets in Resources */,
 				E239E2552002DD1700BA5A15 /* Main.storyboard in Resources */,
 			);
